@@ -4,64 +4,101 @@ body {
 	font-family: 'Nunito', sans-serif;
 	line-height: 1.5;
 	color: #384047;
-	padding: 10px 0 80px;
-}
+	padding: 10px 0 80px;}
+
 div {
 	max-width: 610px;
-	margin: auto;
-}
+	margin: auto;}
+
+h1::before,
+h1::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: black;
+  margin: 0 10px;}
+
 ul {
 	list-style: none;
-	padding: 0;
-}
+	padding: 0;}
+
 li {
-	margin-bottom: 14px;
-}
+	margin-bottom: 14px;}
+
+h1 {  
+  font-size: 5.625rem; 
+  text-transform: lowercase; 
+  line-height: .9; 
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+  margin: 5px 0px 0px 0px;}
+
 a {
-	color: #4183c4;
-}
+	color: #4183c4;}
 
 /* Substring Matching Attribute Selectors ---- */
 
 a[href^="http:"] {
   color: #52bab3;
-  text-decoration: none;
-}
+  text-decoration: none;}
 
 a[href$=".pdf"] {
-  background-image: url('../img/icn-pdf.svg');
-}
+  background-image: url('../img/icn-pdf.svg');}
 
 a[href$=".jpg"] {
-  background-image: url('../img/icn-picture.svg');
-}
+  background-image: url('../img/icn-picture.svg');}
 
 a[href$=".zip"] {
-  background-image: url('../img/icn-zip.svg');
-}
+  background-image: url('../img/icn-zip.svg');}
 
 a[href*="downloads"] {
   background-repeat: no-repeat;
   background-size: 18px 18px;
-  padding-left: 25px; 
-}
+  padding-left: 25px;}
 
-img[src*="thumb"] {
+img[src*="img"] {
   margin: 4px;
   border: solid 2px;
   width: 180px;
-  height: 140px;
-}
+  height: 140px;}
 
 img[src*="bay"] {
-  border-color: red;
-}
+  border-color: red;}
 
+.intro::first-line {
+  font-weight: bold;
+  font-size: 1.4em;}
 
+.intro::first-letter {
+  float: left;
+  font-size: 80px;
+  color: white;
+  padding: 5px 10px;
+  background: #384047;
+  margin: 10px 10px 0 0;
+  border-radius: 5px;
+  line-height: 1;}
 
-
-
-
+.main {
+  padding-top: 20px;
+  height: 700px;
+  background: linear-gradient(#8c9fff, transparent 90%),
+              linear-gradient(0deg, rgba(117, 123, 134, 0.19), transparent),
+              #7e0000 url('../img/IMG_5187.jpg') no-repeat center;
+  background-size: cover;
+  color: white;}
 
 
 
